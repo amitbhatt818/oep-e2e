@@ -19,7 +19,8 @@
 # Script terminates successfully once cluster is up or else fails after a T/O period of 900 seconds
 # To run the script: `python cluster_health_check.py --nodes 4`
 
-from kubernetes import client, config
+from kubernetes import config
+from kubernetes import client
 import multiprocessing
 import time
 import argparse
